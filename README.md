@@ -5,15 +5,19 @@
 ├── images
 │   └── bg.jpg
 ├── pages
-│   ├── pages1/index-1.html
-│   ├── pages1/index-1.js
-│   ├── pages2/index-2.html
-│   ├── pages2/index-2.js
-│   ├── index/index.html
-│   ├── index/index.js
-│   └── app.js
-├── styles
-│   ├── album.css
-│   └── main.css
-└── webpack.config.js
+│   ├── app.js
+│   ├── index
+│   │   ├── index.html
+│   │   └── index.js
+│   ├── page1
+│   │   ├── index-1.html
+│   │   └── index-1.js
+│   └── page2
+│       ├── index-2.html
+│       └── index-2.js
+└── styles
+    ├── album.css
+    └── main.css
 ```
+
+生成多页面

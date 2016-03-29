@@ -5,10 +5,10 @@ const build = path.join(__dirname, 'build');
 
 module.exports = {
     entry: {
-      "vendor": ["jquery", "bootstrap", "./entry/vendor"],
-      "index": "./entry/index.js",
-      "index-1": "./entry/index-1.js",
-      "index-2": "./entry/index-2.js"
+      "vendor": ["jquery", "bootstrap", __dirname + "/pages/app"],
+      "index": __dirname + "/pages/index/index.js",
+      "index-1": __dirname + "/pages/page1/index-1.js",
+      "index-2": __dirname + "/pages/page2/index-2.js"
     },
     output: {
         path: path.join(build),
@@ -48,17 +48,17 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: "pages/index.html",
+            template: "pages/index/index.html",
             chunks: ['vendor', 'index'],
         }),
         new HtmlWebpackPlugin({
             filename: "index-1.html",
-            template: "pages/index-1.html",
+            template: "pages/page1/index-1.html",
             chunks: ['vendor', 'index-1'],
         }),
         new HtmlWebpackPlugin({
             filename: "index-2.html",
-            template: "pages/index-2.html",
+            template: "pages/page2/index-2.html",
             chunks: ['vendor', 'index-2']
         })
     ]
