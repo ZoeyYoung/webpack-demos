@@ -1,5 +1,7 @@
 # webpack-multiple-pages-bootstrap4-jquery-test
 
+传统的多页面开发，一个页面对应一个JS文件
+
 ```
 .
 ├── images
